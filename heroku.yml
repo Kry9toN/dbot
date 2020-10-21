@@ -1,0 +1,5 @@
+build:
+  docker:
+      worker: Dockerfile
+run:
+   worker: java -Dnogui=true -jar JMusicBot-0.2.10-Linux.jar
