@@ -10,7 +10,7 @@ RUN apt-get update -qq && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
     wget openjdk-8-jdk \
-    && apt autoremove --y
+    && apt autoremove --yes
 
 RUN git clone -b master https://github.com/Kry9toN/dbot /home/dbot
 WORKDIR /home/dbot
